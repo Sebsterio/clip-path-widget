@@ -1,0 +1,13 @@
+body {
+  height: 100vw;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #75e7ff;
+  font-family: "Nunito", "sans-serif";
+}
+/*# sourceMappingURL=main.css.map */
