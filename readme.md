@@ -1,4 +1,4 @@
-##TODO
+## TODO
 
-- support arbitrary number of cards
-- IU select number of cards
+- Support arbitrary number of cards
+- UI: select number of cards
