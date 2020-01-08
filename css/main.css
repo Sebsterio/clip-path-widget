@@ -11,29 +11,35 @@ body {
   font-family: "Nunito", "sans-serif";
 }
 
+.container {
+  position: relative;
+}
+
 .inner {
+  position: relative;
   width: 250px;
   padding: 1em;
   border-radius: 10px;
-  background: #3dfef4;
   color: white;
-  -webkit-clip-path: circle(10% at 90% 20%);
-          clip-path: circle(10% at 90% 20%);
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
+}
+
+.inner:hover {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+.inner:hover span {
+  opacity: 0;
 }
 
 .inner span {
   float: right;
   position: relative;
-  margin-right: 4%;
   font-weight: bold;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
-}
-
-.inner:hover span {
-  opacity: 0;
 }
 
 .inner h1 {
@@ -44,9 +50,33 @@ body {
   font-size: 0.8rem;
 }
 
-.inner:hover {
-  -webkit-clip-path: circle(100%);
-          clip-path: circle(100%);
+.inner-fr {
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  background: #3dfef4;
+}
+
+.inner-fr:hover {
   background: #178ae7;
+}
+
+.inner-fr span {
+  margin-right: 4%;
+}
+
+.inner-es {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-clip-path: circle(10% at 70% 20%);
+          clip-path: circle(10% at 70% 20%);
+  background: #ffbf6b;
+}
+
+.inner-es:hover {
+  background: #ca7300;
+}
+
+.inner-es span {
+  margin-right: 26.5%;
 }
 /*# sourceMappingURL=main.css.map */

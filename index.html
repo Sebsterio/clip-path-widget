@@ -13,12 +13,25 @@
 <body>
 
 	<div class="container">
-		<div class="inner">
+		<div class="inner inner-fr">
 			<span>i</span>
-			<h1>Hello</h1>
-			<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+			<h1>Bonjour!</h1>
+			<p>Loreoum ipseaum Loreoum ipseaum Loreoum ipseaum Loreoum ipseaum</p>
+		</div>
+		<div class="inner inner-es">
+			<span>i</span>
+			<h1>Hola!</h1>
+			<p>Loremo ipsumo Loremo ipsumo Loremo ipsumo Loremo ipsumo Loremo ipsumo </p>
 		</div>
 	</div>
+
+	<script>
+		const inners = document.querySelectorAll('.inner')
+		inners.forEach(inner => {
+			inner.addEventListener('mouseenter', () => inner.style.zIndex = 999)
+			inner.addEventListener('mouseleave', () => inner.style.zIndex = 0)
+		})
+	</script>
 
 </body>
 
