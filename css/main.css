@@ -1,5 +1,5 @@
 body {
-  height: 100vw;
+  height: 100vh;
   margin: 0;
   display: -ms-grid;
   display: grid;
@@ -7,7 +7,46 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #75e7ff;
+  background: #cbf3fd;
   font-family: "Nunito", "sans-serif";
+}
+
+.inner {
+  width: 250px;
+  padding: 1em;
+  border-radius: 10px;
+  background: #3dfef4;
+  color: white;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.inner span {
+  float: right;
+  position: relative;
+  margin-right: 4%;
+  font-weight: bold;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.inner:hover span {
+  opacity: 0;
+}
+
+.inner h1 {
+  margin: 0;
+}
+
+.inner p {
+  font-size: 0.8rem;
+}
+
+.inner:hover {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+  background: #178ae7;
 }
 /*# sourceMappingURL=main.css.map */

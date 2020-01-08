@@ -1,11 +1,44 @@
 body {
-	height: 100vw;
+	height: 100vh;
 	margin: 0;
-
 	display: grid;
 	justify-items: center;
 	align-items: center;
-
-	background: #75e7ff;
+	background: #cbf3fd;
 	font-family: "Nunito", "sans-serif";
+}
+
+.inner {
+	width: 250px;
+	padding: 1em;
+	border-radius: 10px;
+	background: #3dfef4;
+	color: white;
+	clip-path: circle(10% at 90% 20%);
+	transition: all 500ms ease-in-out;
+
+	span {
+		float: right;
+		position: relative;
+		margin-right: 4%;
+		font-weight: bold;
+		transition: all 500ms ease-in-out;
+	}
+
+	&:hover span {
+		opacity: 0;
+	}
+
+	h1 {
+		margin: 0;
+	}
+
+	p {
+		font-size: 0.8rem;
+	}
+
+	&:hover {
+		clip-path: circle(100%);
+		background: rgb(23, 138, 231);
+	}
 }
